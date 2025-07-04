@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff8a00, #e52e71); /* orange to pink */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 400px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+#input {
+  border: none;
+  font-size: 1.25rem;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  font-family: inherit;
+}
+
+#input::placeholder {
+  color: #ccc;
+}
+
+#input:focus {
+  outline: none;
+  background-color: #f0ebfa;
+}
+
+#submit {
+  width: 100%;
+  background: linear-gradient(90deg, #ff8a00, #ff6a00); /* orange gradient */
+  color: #fff; /* keep text solid white */
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+#submit:hover {
+  background: linear-gradient(90deg, #ff6a00, #ff8a00); /* reverse on hover */
+}
+
+
+#todos {
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+#todos li {
+  border-top: 1px solid #e5e5e5;
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+#todos li:first-child {
+  border-top: none;
+}
+
+#todos li:hover {
+  background-color: #f9f7ff;
+}
+
+#todos li.completed {
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+
+#todos li::after {
+  content: "📝";
+  position: absolute;
+  right: 2.5rem;
+  opacity: 0.5;
+  font-size: 1rem;
+}
+
+#todos li:hover::after {
+  opacity: 1;
+}
+
+small {
+  color: #999;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  text-align: center;
+  display: block;
+}
