@@ -1,0 +1,25 @@
+body {
+  font-family: Arial;
+  padding: 2rem;
+  background-color: #f2f2f2;
+}
+
+#bookContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.book-card {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  width: 200px;
+  position: relative;
+}
+
+button {
+  margin: 0.25rem 0;
+  cursor: pointer;
+}
